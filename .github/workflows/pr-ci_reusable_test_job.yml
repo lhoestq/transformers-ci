@@ -466,7 +466,7 @@ jobs:
         run: |
           eval "$INSTALL_STEPS"
           uv pip install 'transformers-ci[otel] @ git+https://github.com/huggingface/transformers-ci@main'
-          uv pip install 'datasets @ git+https://github.com/huggingface/datasets@main'
+          uv pip install -U 'datasets @ git+https://github.com/huggingface/datasets@main'
         env:
           INSTALL_STEPS: ${{ inputs.install_steps }}
 
